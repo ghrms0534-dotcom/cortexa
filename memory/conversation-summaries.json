@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": "2026-06-10T04:02:33.724Z",
+    "user": "이 프로젝트에서 package.json 읽고 scripts 설명해줘",
+    "assistant": "No answer returned."
+  },
+  {
+    "timestamp": "2026-06-10T04:07:32.569Z",
+    "user": "src 폴더에서 mcp 관련 파일들이 뭐가 있는지 찾아서 요약해줘",
+    "assistant": "No answer returned."
+  },
+  {
+    "timestamp": "2026-06-10T04:09:56.856Z",
+    "user": "이 프로젝트에서 package.json 읽고 scripts 설명해줘",
+    "assistant": "personal-mcp-agent-assistant의 package.json scripts 설명입니다.\n- build: TypeScript를 컴파일해서 dist를 만드는 빌드 명령 (`tsc -p tsconfig.json`)\n- dev: tsx로 에이전트를 바로 실행하는 개발 모드 (`tsx src/agent/index.ts`)\n- start: 빌드된 dist/agent/index.js를 실행하는 프로덕션 시작 명령 (`node dist/agent/index.js`)\n- server:memo: memo MCP 서버를 단독 실행하는 "
+  },
+  {
+    "timestamp": "2026-06-10T04:10:06.772Z",
+    "user": "src 폴더에서 mcp 관련 파일들이 뭐가 있는지 찾아서 요약해줘",
+    "assistant": "src 기준 mcp 관련 검색 결과입니다.\n관련 파일이나 텍스트를 찾지 못했습니다."
+  },
+  {
+    "timestamp": "2026-06-10T04:12:00.689Z",
+    "user": "src 폴더에서 mcp 관련 파일들이 뭐가 있는지 찾아서 요약해줘",
+    "assistant": "src 기준 mcp 관련 검색 결과입니다.\n1. memory\\conversation-summaries.json\n   d.\" }, { \"timestamp\": \"2026-06-10T04:07:32.569Z\", \"user\": \"src 폴더에서 mcp 관련 파일들이 뭐가 있는지 찾아서 요약해줘\", \"assistant\": \"No answer returned.\" }, { \"timestamp\": \"2026-06-10T04:09:56.856Z\", \"user\": \"이 프로젝트에서 package.json 읽고\n2. package-lock.json\n "
+  },
+  {
+    "timestamp": "2026-06-10T04:20:00.247Z",
+    "user": "git 상태 보여줘",
+    "assistant": "No answer returned."
+  }
+]

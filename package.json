@@ -1,0 +1,27 @@
+{
+  "name": "personal-mcp-agent-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Windows-friendly personal MCP agent assistant with a CLI, local MCP servers, and JSON memory.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/agent/index.ts",
+    "start": "node dist/agent/index.js",
+    "server:memo": "tsx src/mcp-servers/memo.ts",
+    "server:todo": "tsx src/mcp-servers/todo.ts",
+    "server:project-search": "tsx src/mcp-servers/project-search.ts",
+    "server:command": "tsx src/mcp-servers/command.ts",
+    "server:git": "tsx src/mcp-servers/git.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.0",
+    "dotenv": "^16.6.1",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
