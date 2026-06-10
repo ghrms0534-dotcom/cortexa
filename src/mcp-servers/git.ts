@@ -4,6 +4,7 @@ import { promisify } from "node:util";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
+import { getWorkspaceRoot } from "../shared/workspace.js";
 
 const execAsync = promisify(exec);
 
@@ -11,10 +12,6 @@ const server = new McpServer({
   name: "git-server",
   version: "1.0.0"
 });
-
-function getWorkspaceRoot(): string {
-  return path.resolve(process.env.AGENT_WORKSPACE_ROOT ?? process.cwd());
-}
 
 function resolveWorkspaceCwd(cwd?: string): string {
   const workspaceRoot = getWorkspaceRoot();

@@ -12,6 +12,7 @@
     "server:todo": "tsx src/mcp-servers/todo.ts",
     "server:project-search": "tsx src/mcp-servers/project-search.ts",
     "server:command": "tsx src/mcp-servers/command.ts",
+    "server:build-test": "tsx src/mcp-servers/build-test.ts",
     "server:git": "tsx src/mcp-servers/git.ts"
   },
   "dependencies": {

@@ -1,8 +1,9 @@
 import path from "node:path";
 import { readJsonFile, writeJsonFile } from "./json-store.js";
 import type { ConversationSummary, MemoItem, TodoItem } from "./types.js";
+import { getAgentRoot } from "./workspace.js";
 
-const memoryRoot = path.resolve(process.cwd(), "memory");
+const memoryRoot = path.join(getAgentRoot(), "memory");
 
 const files = {
   summaries: path.join(memoryRoot, "conversation-summaries.json"),

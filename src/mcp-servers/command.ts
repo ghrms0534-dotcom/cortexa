@@ -5,6 +5,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 import { detectRisk } from "../shared/risk.js";
+import { getWorkspaceRoot } from "../shared/workspace.js";
 
 const execAsync = promisify(exec);
 
@@ -47,7 +48,7 @@ server.registerTool(
       };
     }
 
-    const workspaceRoot = path.resolve(process.env.AGENT_WORKSPACE_ROOT ?? process.cwd());
+    const workspaceRoot = getWorkspaceRoot();
     const resolvedCwd = cwd ? path.resolve(workspaceRoot, cwd) : workspaceRoot;
 
     if (!resolvedCwd.startsWith(workspaceRoot)) {
