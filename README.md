@@ -25,10 +25,6 @@
 
 - `qwen2.5:3b`
 
-대체 후보:
-
-- `qwen3:4b`
-
 ## 프로젝트 구조
 
 ```text
@@ -75,7 +71,6 @@
 권장 환경:
 
 - CPU 환경: `qwen2.5:3b`
-- 메모리 여유가 조금 더 있으면: `qwen3:4b`
 
 ## 설치 방법
 
@@ -103,12 +98,6 @@ ollama --version
 
 ```powershell
 ollama pull qwen2.5:3b
-```
-
-대체 모델:
-
-```powershell
-ollama pull qwen3:4b
 ```
 
 간단 실행 확인:
