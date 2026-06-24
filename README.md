@@ -1,4 +1,4 @@
-# MCP Personal Agent
+# cortexa
 
 LLM이 단순히 질문에 답변하는 수준을 넘어, **로컬 개발 환경에서 실제 작업을 수행할 수 있는 자율형 AI Agent 시스템**을 구현한 프로젝트입니다.
 
