@@ -8,6 +8,23 @@ LLM이 단순히 질문에 답변하는 수준을 넘어, **로컬 개발 환경
 
 ---
 
+## System Architecture
+
+```mermaid
+flowchart LR
+  U[User CLI] --> A[Personal MCP Assistant]
+  A --> O[Ollama<br/>qwen2.5:3b]
+  A --> M[MCP Tools]
+  M --> F[Project Search]
+  M --> G[Git]
+  M --> B[Build/Test]
+  M --> C[Command]
+  M --> N[Memo / Todo]
+  F --> W[Local Workspace]
+```
+
+> AI Agent autonomously selects tools, executes local tasks, analyzes results, updates memory, and performs iterative self-correction.
+
 ## 프로젝트 목표
 
 기존 LLM 기반 Assistant는 다음과 같은 한계가 존재했습니다.
